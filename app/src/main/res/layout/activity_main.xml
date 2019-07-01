@@ -8,6 +8,6 @@
     <TextView
         android:id="@+id/test_scan_qrcode"
         style="@style/MatchWrapTv"
-        android:text="测试扫描二维码"/>
+        android:text="扫一扫"/>
 
 </LinearLayout>
