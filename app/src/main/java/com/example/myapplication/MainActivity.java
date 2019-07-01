@@ -4,9 +4,7 @@ package com.example.myapplication;
 import android.Manifest;
 import android.content.Intent;
 import android.os.Bundle;
-//import android.support.v7.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatActivity;
-//import android.support.v7.widget.Toolbar;
 import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 
@@ -55,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements EasyPermissions.P
     private void requestCodeQRCodePermissions() {
         String[] perms = {Manifest.permission.CAMERA, Manifest.permission.READ_EXTERNAL_STORAGE};
         if (!EasyPermissions.hasPermissions(this, perms)) {
-            EasyPermissions.requestPermissions(this, "扫描二维码需要打开相机和散光灯的权限", REQUEST_CODE_QRCODE_PERMISSIONS, perms);
+            EasyPermissions.requestPermissions(this, "扫描二维码需要打开相机和闪光灯的权限", REQUEST_CODE_QRCODE_PERMISSIONS, perms);
         }
     }
 }
